@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed8fda74-ec9d-49a8-9941-6765f4148910" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1XkKVNwGa5RDlRMPWjXyGZ07Lxv" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed8fda74-ec9d-49a8-9941-6765f4148910" name="Default Changelist" comment="" />
+      <created>1581584674974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581584674974</updated>
+      <workItem from="1581584676366" duration="8019000" />
+      <workItem from="1581925754862" duration="4271000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="464" y="250" width="992" height="731" key="SettingsEditor" timestamp="1581931395040">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state x="464" y="250" width="992" height="731" key="SettingsEditor/0.25.1920.1175@0.25.1920.1175" timestamp="1581931395040" />
+    <state x="862" y="349" width="319" height="534" key="ftp.server.browser" timestamp="1581588059029">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state x="862" y="349" width="319" height="534" key="ftp.server.browser/0.25.1920.1175@0.25.1920.1175" timestamp="1581588059029" />
+  </component>
+</project>

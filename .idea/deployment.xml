@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="cpanel">
+    <serverData>
+      <paths name="cpanel">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/domains/altuofianco.ml/public_html/wp-content/themes/atf" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
