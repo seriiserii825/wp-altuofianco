@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="56e43d25-c482-44df-a860-a3f74a56d094" name="cpanel" url="http://ftp.altuofianco.ml">
-        <fileTransfer host="ftp.altuofianco.ml" port="21">
+      <webServer id="56e43d25-c482-44df-a860-a3f74a56d094" name="cpanel" url="http://185.224.137.93">
+        <fileTransfer host="185.224.137.93" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

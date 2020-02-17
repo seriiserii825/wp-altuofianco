@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed8fda74-ec9d-49a8-9941-6765f4148910" name="Default Changelist" comment="" />
+    <list default="true" id="ed8fda74-ec9d-49a8-9941-6765f4148910" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-soluzione-hr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +22,13 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XkKVNwGa5RDlRMPWjXyGZ07Lxv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -41,21 +58,24 @@
       <option name="presentableId" value="Default" />
       <updated>1581584674974</updated>
       <workItem from="1581584676366" duration="8019000" />
-      <workItem from="1581925754862" duration="4271000" />
+      <workItem from="1581925754862" duration="7347000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="250" width="992" height="731" key="SettingsEditor" timestamp="1581931395040">
+    <state x="464" y="250" width="992" height="731" key="SettingsEditor" timestamp="1581934676910">
       <screen x="0" y="25" width="1920" height="1175" />
     </state>
-    <state x="464" y="250" width="992" height="731" key="SettingsEditor/0.25.1920.1175@0.25.1920.1175" timestamp="1581931395040" />
-    <state x="862" y="349" width="319" height="534" key="ftp.server.browser" timestamp="1581588059029">
+    <state x="464" y="250" width="992" height="731" key="SettingsEditor/0.25.1920.1175@0.25.1920.1175" timestamp="1581934676910" />
+    <state x="862" y="349" width="319" height="534" key="ftp.server.browser" timestamp="1581934675134">
       <screen x="0" y="25" width="1920" height="1175" />
     </state>
-    <state x="862" y="349" width="319" height="534" key="ftp.server.browser/0.25.1920.1175@0.25.1920.1175" timestamp="1581588059029" />
+    <state x="862" y="349" width="319" height="534" key="ftp.server.browser/0.25.1920.1175@0.25.1920.1175" timestamp="1581934675134" />
   </component>
 </project>
