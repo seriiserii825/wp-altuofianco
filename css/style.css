@@ -67,39 +67,15 @@ body
 
 #cssmenu
 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1120px;
 	font-family: sans-serif;
 	background: #fff;
 }
 
-#cssmenu ul.navigation > li:after
-{
-	content: "";
-	width: 1px;
-	height: 15px;
-	background: #e5e5e5;
-	position: absolute;
-	top: 19px;
-}
-
-#cssmenu ul.navigation > li:first-child:after
-{
-	content: "";
-	width: 1px;
-	height: 15px;
-	background: transparent;
-	position: absolute;
-	top: 19px;
-}
-
-#cssmenu ul.navigation > li:last-child:after
-{
-	content: "";
-	width: 1px;
-	height: 15px;
-	background: #ddd;
-	position: absolute;
-	top: 3px;
-}
 
 #cssmenu > ul.navigation
 {
@@ -124,16 +100,22 @@ body
 #cssmenu > ul > li > a
 {
 	text-transform: uppercase;
-	font-size: .9em;
-	color: #869aa1;
-	font-weight: 700;
+	font-size: 16px;
+	color: #2a2a2a;
+	font-weight: 200;
 	text-align: left;
 	display: flex;
 	align-items: center;
-	padding: 20px 20px;
+	padding: 10px 15px;
 	justify-content: space-between;
-	font-family: Comfortaa-Bold;
+	font-family: Comfortaa-Regular;
+	transition: all .3s;
 }
+#cssmenu > ul > li > a:hover {
+	color: #0079a2;
+}
+
+
 
 ul.navigation
 {
@@ -141,29 +123,8 @@ ul.navigation
 	/*padding-right: 3% ;*/
 	font-family: Comfortaa-Bold
 }
-
-#cssmenu > ul > li.has-sub > a
-{
-	padding-right: 30px
-}
-
-#cssmenu > ul > li.has-sub > a:before
-{
-	position: absolute;
-	top: 16px;
-	right: 14px;
-	display: block;
-	width: 10px;
-	height: 8px;
-	font-size: 18px;
-	/*background: #869aa1;*/
-	content: "\f107";
-	/*content: '';*/
-	font-family: "Font Awesome 5 Free";
-
-	-webkit-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	transition: all .25s ease
+ul.navigation li {
+	position: relative;
 }
 
 #cssmenu ul ul
@@ -191,13 +152,27 @@ ul.navigation
 
 #cssmenu ul.sub-menu
 {
-	background-color: #FFF;
-	border: 1px solid rgba(0, 0, 0, .15);
+	position: absolute;
+	top: 140%;
+	left: 0;
+	z-index: 7;
+	display: none;
+	padding: 5px 0;
+	margin: 0;
+	background-color: #f5f5f5;
 	background-clip: padding-box;
 }
 
-#cssmenu ul ul li:hover
+#cssmenu ul ul li
 {
+	height: 0;
+	top: 100%;
+	left: 0;
+	z-index: 7;
+	padding: 5px 0;
+	margin: 0;
+	background-clip: padding-box;
+	transition: all .25s ease;
 }
 
 #cssmenu li:hover > ul
@@ -1540,7 +1515,6 @@ ul.navigation.open li
 	{
 		text-align: left;
 		font-size: 38px !important;
-		color: #000000;
 		font-family: Comfortaa-Regular;
 		color: #4F4F4F;
 		line-height: 49px;
@@ -1845,4 +1819,5 @@ textarea:-ms-input-placeholder
 	font-size: 10px;
 	color: rgba(0, 0, 0, 0.5);
 }
+
 

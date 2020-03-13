@@ -85,9 +85,13 @@ let count = 0;
 
  });
  
- // jQuery(document).ready(function($) {
-	//  $('select').styler();
- // });
+ jQuery(document).ready(function($) {
+ 	// $('#cssmenu ul li.has-children').hover(function () {
+	// 	$(this).find('.sub-menu').fadeIn();
+	// }, function () {
+	// 	$('#cssmenu ul li.has-children .sub-menu').fadeOut();
+	// });
+ });
 
  
  
