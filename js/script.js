@@ -1,19 +1,15 @@
 
  
- 		var webinar1_date= ['01 marzo 2020 10:00',
-						'03 marzo 2020 11:00',
-						'03 marzo 2020 15:00',
-						'03 marzo 2020 18:00'							
+ 		var webinar1_date= [							
 						 ];			
- 		var webinar2_date= ['02 marzo 2020 10:00',
-						'07 marzo 2020 11:00',
-						'08 marzo 2020 15:00',
-						'11 marzo 2020 18:00'							
+ 		var webinar2_date= ['Venerdì 20 Marzo - ore 10.30',
+						'Mercoledì 25 Marzo - ore 15.30'						
 						 ];		
- 		var webinar3_date= ['03 marzo 2020 10:00',
-						'04 marzo 2020 11:00',
-						'23 marzo 2020 15:00',
-						'05 marzo 2020 18:00'							
+ 		var webinar3_date= [			
+						 ];
+		var webinar4_date= [			
+						 ];
+		var webinar5_date= [			
 						 ];
 			
 function removeselect() {
@@ -25,6 +21,7 @@ var _getValue = document.getElementById('webdata');
 console.log(_getValue.value)
 
 	});
+	
 
 
 // Changing date and time by changing webinar
@@ -33,6 +30,7 @@ console.log(_getValue.value)
         webinar = jQuery("#webinar").val(); 
 		console.log(webinar);
 
+let count = 0;
 	
 	if (webinar==0) {
 		removeselect();
@@ -41,9 +39,10 @@ console.log(_getValue.value)
 				select = document.getElementById('webdata');
 		
 				var opt = document.createElement('option');
-				opt.value = element;
+				opt.value = count;
 				opt.innerHTML = element;
 				select.appendChild(opt);
+				count++;
 		}
 		);
 
@@ -58,9 +57,10 @@ console.log(_getValue.value)
 				select = document.getElementById('webdata');
 		
 				var opt = document.createElement('option');
-				opt.value = element;
+				opt.value = count;
 				opt.innerHTML = element;
 				select.appendChild(opt);
+				count++;
 		}
 		);
 	}
@@ -74,9 +74,10 @@ console.log(_getValue.value)
 				select = document.getElementById('webdata');
 		
 				var opt = document.createElement('option');
-				opt.value = element;
+				opt.value = count;
 				opt.innerHTML = element;
 				select.appendChild(opt);
+				count++;
 		}
 		);
 	}
@@ -84,9 +85,9 @@ console.log(_getValue.value)
 
  });
  
- jQuery(document).ready(function($) {
-	 $('select').styler();
- });
+ // jQuery(document).ready(function($) {
+	//  $('select').styler();
+ // });
 
  
  

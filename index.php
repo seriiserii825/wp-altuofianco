@@ -1,3 +1,14 @@
+		<?php
+								$webinar = array(
+									'Sicurezza dei dati',
+									'Gestione del tempo e Outsourcing',
+									'Strumenti, regole e soluzioni per lo SmartWorking',
+									'Efficientamento energetico nelle imprese',
+									'Telefonia per il business'
+								);
+
+?>
+
 <!DOCTYPE html>
 <html xmlns="">
 
@@ -61,57 +72,45 @@
         <div class="button"></div>
 
         <ul class="navigation">
-            <li><a href='https://www.altuofianco.it/'>Home</a></li>
-            <li><a href='https://www.altuofianco.it/chi-siamo'>Chi siamo</a></li>
+            <li class='active'><a href='https://www.altuofianco.it/conosci-altuofianco/'>Conosci altuofianco</a></li>
             <li><a href="https://www.altuofianco.it/soluzioni/">Soluzioni</a>
                 <ul class="sub-menu">
                     <li><a href='https://www.altuofianco.it/soluzioni/strategia/'>Strategia</a>
                         <ul class="sub-menu">
-                            <li><a href='https://www.altuofianco.it/soluzioni/strategia/comunicazione/telecomunicazioni-avanzate'>TELECOMUNICAZIONI AVANZATE</a></li>
-                            <li><a href='https://www.altuofianco.it/soluzioni/strategia/competitivita/soluzioni-digital-marketing'>Digital Marketing</a></li>
-                            <li><a href='https://www.altuofianco.it/soluzioni/strategia/comunicazione/siti-internet-e-app'>Siti internet e App</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/strategia/comunicazione/sviluppo-del-brand">Sviluppo del tuo brand</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/strategia/gestione/ufficio-al-tuo-fianco">Ufficio Altuofianco</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/strategia/gestione/noleggio-operativo-per-aziende">Noleggio operativo</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/strategia/gestione/fattura-contabilita-cloud">Fattura elettronica</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/strategia/comunicazione/centralini-virtuali">Centralini virtuali</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/comunicazione/'>Comunicazione</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/competitivita/'>Competitività</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/gestione/'>Gestione</a></li>
                         </ul>
                     </li>
                     <li><a href='https://www.altuofianco.it/soluzioni/sicurezza/'>Sicurezza</a>
                         <ul class="sub-menu">
-                            <li><a href='https://www.altuofianco.it/soluzioni/sicurezza/legale/gdpr'>GDPR</a></li>
-                            <li><a href='https://www.altuofianco.it/soluzioni/sicurezza/aziendale/avvocato-altuofianco'>Avvocato Altuofianco</a></li>
-                            <li><a href='https://www.altuofianco.it/soluzioni/sicurezza/aziendale/formazione-gdpr'>Formazione GDPR</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/sicurezza/cybersecurity/mdm-mobile-device-management">MDM mobile device management</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/sicurezza/cybersecurity/wi-fi-webapp-scan-e-firewall">Wi-Fi, Webapp Scan e Firewall</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/sicurezza/cybersecurity/servizi-in-cloud">Servizi in Cloud</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/sicurezza/legale/dpo-data-protection-officer">DPO Data Protection Officer</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/cybersecurity/'>Cybersecurity</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/legale/'>Legale</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/aziendale/'>Aziendale</a></li>
                         </ul>
                     </li>
                     <li><a href='https://www.altuofianco.it/soluzioni/energie/'>Energie</a>
                         <ul class="sub-menu">
-                            <li><a href="https://www.altuofianco.it/soluzioni/energie/azienda/easyhr-app-risorse-umane">App per la gestione del personale</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/energie/azienda/efficientamento-energetico">Efficientamento energetico</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/energie/persone/relazioni-per-business">Relazioni per il business</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/energie/azienda/business-process-outsourcing">Business process outsourcing</a></li>
-                            <li><a href="https://www.altuofianco.it/soluzioni/energie/collaboratori/eventi-business">business</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/azienda/'>Azienda</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/persone/'>Persone</a></li>
+                            <li><a href='https://www.altuofianco.it/soluzioni/collaboratori/'>Collaboratori</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a href='https://www.altuofianco.it/lavora-con-noi'>Lavora con noi</a></li>
             <li><a href='https://www.altuofianco.it/news/'>News</a></li>
-            <li><a href='https://www.altuofianco.it/contatti'>Contatti</a></li>
-            <!--<li><a target="_blank" href="http://wind.monitorcrm.it/crm/autenticazione/modulo-accesso/">-->
-            <!--        <i class="fas fa-briefcase"></i>-->
-            <!--    </a></li>-->
-            <!--<li>-->
-            <!--    <form id="searchform" class="navbar-form" role="search" action="https://www.altuofianco.it"-->
-            <!--          method="get">-->
-            <!--        <input id="s" name="s" type="text" placeholder="Search …" value="Search...">-->
-            <!--        <button id="searchsubmit" type="submit" name="submit">Submit</button>-->
-            <!--    </form>-->
-            <!--</li>-->
+            <li><a href='https://www.altuofianco.it/carriere/'>Carriere</a></li>
+            <li><a href='http://shop.altuofianco.it/'>Accesso Clienti</a></li>
+            <li><a target="_blank" href="http://wind.monitorcrm.it/crm/autenticazione/modulo-accesso/">
+                    <i class="fas fa-briefcase"></i>
+                </a></li>
+            <li>
+                <form id="searchform" class="navbar-form" role="search" action="https://www.altuofianco.it"
+                      method="get">
+                    <input id="s" name="s" type="text" placeholder="Search …" value="Search...">
+                    <button id="searchsubmit" type="submit" name="submit">Submit</button>
+                </form>
+            </li>
         </ul>
 
     </nav>
@@ -167,12 +166,7 @@
                             <select id="webinar" name="webinar" required>
                                 <option value="">Scegli il webinar*</option>
 								<?php
-								$webinar = array(
-									'Webinar #1',
-									'Webinar #2',
-									'Webinar #3'
-								);
-
+					
 								foreach ($webinar as $key => $value):
 									echo '<option value="' . $key . '">' . $value . '</option>'; //close your tags!!
 								endforeach;
@@ -190,6 +184,9 @@
                         </div>
                         <div class="form-group">
                             <input type="tel" name="phone" placeholder="Telefono" required>
+                        </div>
+						  <div class="form-group">
+                            <input type="text" name="name" placeholder="Nominativo*" required>
                         </div>
                         <div class="form-group">
                             <input type="text" name="azienda" placeholder="Azienda*" required>
@@ -218,10 +215,47 @@
 
                         <div class="btn">
                             <button name="register-btn" type="submit" class="registerbtn">Invia</button>
+							
+		
                         </div>
                     </div>
                 </form>
             </div>
+					
+<?php
+
+
+if (isset($_REQUEST['register-btn'])) {
+	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+		if (strlen($_POST['phone']) > 5) {
+			$to = 'webmaster@bludelego.it';
+			$subject = 'Nuova compilazione form webinar ' . $webinar[$_POST['webinar']] . '  ' . $_POST['webdata'];
+			$message = 'Webinar ' . $webinar[$_POST['webinar']] . "\r\n" . 'da ' . $_POST['webdata'] . "\r\n" . 'Email ' . $_POST['email'] . "\r\n" . 'Telefono ' . $_POST['phone'] . "\r\n" . 'Nominativo ' . $_POST['name'] . "\r\n" . 'Azienda ' . $_POST['azienda'] . "\r\n" . 'Provincia ' . $_POST['provincia'] . "\r\n" . 'Messaggio ' . $_POST['messaggio'] . "\r\n";
+
+			$headers = 'From: noreply@altuofianco.it' . "\r\n" .
+				'Reply-To: noreply@altuofianco.it' . "\r\n" .
+				'Bcc: f.cioni@altuofianco.it, radu@blueline.md' . "\r\n" .
+				'X-Mailer: PHP/' . phpversion();
+
+			mail($to, $subject, $message, $headers);
+			echo " <div id='test-popup' class='white-popup'>  <p color='darkblue'> Il form e stato inviato con successo </p>  </div>
+
+			";
+			
+			
+		}
+	} else {
+		echo "</br><p color='red'>  Campo email sbagliato  </p> </br>" . $_POST['email'];
+	}
+	if (strlen($_POST['phone']) > 6) {
+
+	} else {
+		echo "</br><p color='red'>  Campo telefono sbagliato </p> </br>" . $_POST['phone'];
+	}
+}
+
+
+?>
 
 
         </div>
@@ -295,34 +329,4 @@
 </html>
 
 
-<?php
-
-
-if (isset($_REQUEST['register-btn'])) {
-	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-		if (strlen($_POST['phone']) > 6) {
-			$to = 'webmaster@bludelego.it';
-			$subject = 'Nuova compilazione form webinar ' . $webinar[$_POST['webinar']] . '  ' . $_POST['webdata'];
-			$message = 'Webinar ' . $webinar[$_POST['webinar']] . "\r\n" . 'da ' . $_POST['webdata'] . "\r\n" . 'Nominativo ' . $_POST['name'] . "\r\n" . 'Azienda ' . $_POST['azienda'] . "\r\n" . 'Email ' . $_POST['email'] . "\r\n" . 'Telefono ' . $_POST['phone'] . "\r\n" . 'Messaggio ' . $_POST['messaggio'] . "\r\n";
-
-			$headers = 'From: noreply@altuofianco.it' . "\r\n" .
-				'Reply-To: noreply@altuofianco.it' . "\r\n" .
-				'Bcc: f.cioni@altuofianco.it, radu@blueline.md' . "\r\n" .
-				'X-Mailer: PHP/' . phpversion();
-
-			mail($to, $subject, $message, $headers);
-			echo "</br><p color='darkblue'> Il form e stato inviato con successo </p> </br>";
-		}
-	} else {
-		echo "</br><p color='red'  Campo email sbagliato  </p> </br>" . $_POST['email'];
-	}
-	if (strlen($_POST['phone']) > 6) {
-
-	} else {
-		echo "</br><p color='red'>  Campo telefono sbagliato </p> </br>" . $_POST['phone'];
-	}
-}
-
-
-?>
 
