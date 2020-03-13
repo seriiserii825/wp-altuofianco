@@ -5,14 +5,13 @@
     <title>Altuofianco - Webinar</title>
     <meta charset="UTF-8">
     <title>Menu</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
 
     <!--    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="libs/form-styler/jquery.formstyler.css">
-    <!--    <script src="jquery.json-2.4.min.js" type="text/javascript"></script>-->
+    <!--<link rel="stylesheet" href="libs/form-styler/jquery.formstyler.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .post-thumbnail img[src$='.svg']
         {
@@ -275,7 +274,8 @@
     </div><!-- .closure -->                            </div>
 
 <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-<script src="libs/form-styler/jquery.formstyler.min.js"></script>
+<script src="jquery.json-2.4.min.js" type="text/javascript"></script>
+<!--<script src="libs/form-styler/jquery.formstyler.min.js"></script>-->
 <script type="text/javascript" src="js/script.js"></script>
 
 </body>
