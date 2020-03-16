@@ -86,11 +86,11 @@ let count = 0;
  });
  
  jQuery(document).ready(function($) {
- 	// $('#cssmenu ul li.has-children').hover(function () {
-	// 	$(this).find('.sub-menu').fadeIn();
-	// }, function () {
-	// 	$('#cssmenu ul li.has-children .sub-menu').fadeOut();
-	// });
+ 	$('#js-button').on('click', function () {
+ 		$('body').toggleClass('fixed');
+ 		$(this).toggleClass('menu-opened');
+ 		$('#js-navigation').toggleClass('open');
+	});
  });
 
  

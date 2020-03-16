@@ -64,9 +64,9 @@
             </div>
         </div>
         <div id="head-mobile"></div>
-        <div class="button"></div>
+        <div class="button" id="js-button"></div>
 
-        <ul class="navigation">
+        <ul class="navigation" id="js-navigation">
             <li><a href='https://www.altuofianco.it/'>Home</a></li>
             <li><a href='https://www.altuofianco.it/chi-siamo'>Chi siamo</a></li>
             <li class="has-children"><a href="https://www.altuofianco.it/soluzioni/">Soluzioni</a>
@@ -225,7 +225,7 @@
                             <input type="text" name="provincia" placeholder="Provincia">
                         </div>
                         <div class="form-group">
-                            <textarea name="messagio" placeholder="Messagio"></textarea>
+                            <textarea name="messagio" placeholder="Messaggio"></textarea>
                         </div>
                         <div class="obligations">* campo obbligatorio</div>
                         <div class="checkbox">
@@ -244,7 +244,7 @@
                         </div>
 
                         <div class="btn">
-                            <button name="register-btn" type="submit" class="registerbtn">Invia</button>
+                            <button name="register-btn" type="submit" class="registerbtn">Iscriviti</button>
 
 
                         </div>
