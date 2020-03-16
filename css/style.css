@@ -32,15 +32,6 @@ body
 	margin: 0 auto;
 }
 
-body.fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding-right: 14px;
-	overflow: hidden;
-}
 
 #cssmenu,
 #cssmenu ul,
@@ -92,30 +83,13 @@ body.fixed {
 	flex-direction: row;
 	align-items: center;
 }
-@media screen and (max-width: 1000px) {
-	#cssmenu > ul.navigation {
-		display: none;
-	}
-}
-
 
 #cssmenu > ul.navigation.open
 {
-	position: fixed;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	padding: 3%;
-	z-index: 1000000;
-}
-#cssmenu > ul.navigation.open a {
-	display: block;
-	text-align: center;
 }
 
 #cssmenu > ul.navigation > li > a
@@ -335,12 +309,12 @@ ul.navigation.open
 .container_form input
 {
 	text-align: left;
-	font-size: 18px;
+	font-size: 18px !important;
 	color: #000000;
 	font-family: Comfortaa-Regular;
 	color: #4F4F4F;
 	line-height: 26px;
-	padding: 0 12px;
+	padding: 10px 12px !important;
 	border-bottom: 1px solid #BDBDBD;
 	box-sizing: border-box;
 	opacity: 0.8;
@@ -373,8 +347,8 @@ input[type="checkbox"]
 	position: absolute;
 	top: -15px;
 	left: -15px;
-	width: 18px;
-	height: 18px;
+	width: 48px;
+	height: 48px;
 	border-radius: 50%;
 	background: rgba(34, 50, 84, 0.03);
 	opacity: 0;
@@ -384,8 +358,6 @@ input[type="checkbox"]
 .check svg
 {
 	position: relative;
-	width: 18px;
-	height: 18px;
 	z-index: 1;
 	fill: none;
 	stroke-linecap: round;
@@ -442,6 +414,11 @@ b
 	font-family: Comfortaa-Bold;
 }
 
+h1, h3
+{
+	font-family: Comfortaa-Bold;
+	line-height: 2em;
+}
 
 h2
 {
@@ -455,6 +432,7 @@ h2
 {
 	font-weight: 800;
 	color: #0C7AA4;
+	font-size: 1.2em;
 }
 
 .title-blue
@@ -567,8 +545,16 @@ ul li
 	padding-bottom: 10px;
 }
 
+ul li p
+{
+	font-size: 1em;
+	line-height: 1.7em;
+}
+
 .wrap
 {
+	padding: 1% 5%;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -629,6 +615,8 @@ label
 
 .footer-flex p
 {
+	font-size: .9em;
+	line-height: 1.8em;
 	font-weight: 400;
 	letter-spacing: .59px;
 	font-family: Comfortaa, sans-serif;
@@ -675,6 +663,7 @@ label
 {
 	background-color: #0e4b57;
 	padding: 30px 0;
+	font-size: .9em;
 }
 
 .closure__text
@@ -696,6 +685,8 @@ ul.closure__nav
 	list-style-type: none;
 	margin: 0;
 	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	padding-inline-start: 40px;
@@ -755,26 +746,36 @@ ul.navigation.open li
 @media only screen and (min-device-width: 320px) and (max-device-width: 668px)
 {
 
+	ul.navigation.open li a
+	{
+		font-size: 1.5em !important;
+	}
+
 	.text_sub_form .question-title
 	{
 		font-weight: 800;
 		color: #0C7AA4;
+		font-size: 3.2em;
+		line-height: 4em;
 	}
 
 	.content_text.text_sub_form p b
 	{
 		font-family: Comfortaa-Bold;
+		font-size: 1.8em;
 	}
 
 	nav#cssmenu .button
 	{
 		width: 70px;
 		height: 70px;
-		position: relative;
+		position: fixed;
+		right: 0;
+		top: 0;
 		cursor: pointer;
 		z-index: 12399994;
 		transform: scale(2);
-		top: 16px;
+		top: 30px;
 		right: 30px;
 	}
 
@@ -934,6 +935,8 @@ ul.navigation.open li
 
 	.button:before
 	{
+		-webkit-transition: all .3s ease;
+		-ms-transition: all .3s ease;
 		transition: all .3s ease;
 		position: absolute;
 		top: 16px;
@@ -1065,11 +1068,27 @@ ul.navigation.open li
 		border-top: none
 	}
 
+	.wrap
+	{
+		/*width: 100%;*/
+		padding: 1% 5%;
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+	}
+
 	.content_text, .content_form
 	{
 		width: 100%;
 		padding: 20px 20px;
 		margin: 0 auto;
+	}
+
+	ul li p
+	{
+		font-size: 2.2em;
+		line-height: 1.7em;
 	}
 
 
@@ -1083,6 +1102,8 @@ ul.navigation.open li
 	{
 		font-weight: 800;
 		color: #0C7AA4;
+		font-size: 3.2em;
+		line-height: 4em;
 	}
 
 	.contattaci_form
@@ -1098,6 +1119,41 @@ ul.navigation.open li
 		font-size: 30px;
 	}
 
+	.container_form input
+	{
+		text-align: left;
+		font-size: 38px !important;
+		color: #000000;
+		font-family: Comfortaa-Regular;
+		color: #4F4F4F;
+		line-height: 49px;
+		padding: 10px 12px !important;
+		border-bottom: 1px solid #BDBDBD;
+		box-sizing: border-box;
+		opacity: 0.8;
+		margin-bottom: 4px;
+		outline: none;
+		width: 100%;
+	}
+
+	button.registerbtn
+	{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Roboto, sans-serif;
+		border-radius: 3px;
+		padding: 15px 25px;
+		text-transform: uppercase;
+		font-weight: 600;
+		background-color: #067da0;
+		color: #fff;
+		border-color: unset;
+		border-width: thin;
+		width: 100%;
+		font-size: 50px;
+	}
+
 	.check svg
 	{
 		position: relative;
@@ -1110,6 +1166,8 @@ ul.navigation.open li
 		transform: translate3d(0, 0, 0);
 		transition: all 0.2s ease;
 		font-size: 32px;
+		width: 50px !important;
+		height: 50px !important;
 	}
 
 	.footer-flex__widgetarea
@@ -1119,6 +1177,15 @@ ul.navigation.open li
 		justify-content: flex-start;
 
 
+	}
+
+	.footer-flex p
+	{
+		font-size: 21px;
+		line-height: 1.9em;
+		font-weight: 400;
+		letter-spacing: 0.59px;
+		font-family: Comfortaa, sans-serif;
 	}
 
 	.head_image
@@ -1285,8 +1352,8 @@ ul.navigation.open li
 		width: 55px;
 		height: 46px;
 		position: absolute;
-		right: 36px;
-		top: 54px;
+		right: 0;
+		top: 0;
 		cursor: pointer;
 		z-index: 12399994;
 	}
@@ -1440,11 +1507,27 @@ ul.navigation.open li
 	}
 
 
+	.wrap
+	{
+		/*width: 100%;*/
+		padding: 1% 5%;
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+	}
+
 	.content_text, .content_form
 	{
 		width: 100%;
 		padding: 20px 20px;
 		margin: 0 auto;
+	}
+
+	ul li p
+	{
+		font-size: 1.2em;
+		line-height: 1.7em;
 	}
 
 	.container_form
@@ -1457,6 +1540,8 @@ ul.navigation.open li
 	{
 		font-weight: 800;
 		color: #0C7AA4;
+		font-size: 2.2em;
+		line-height: 4em;
 	}
 
 	.contattaci_form
@@ -1465,6 +1550,45 @@ ul.navigation.open li
 		max-width: 800px;
 		margin: 0;
 		padding: 0;
+	}
+
+	label b
+	{
+		font-size: 30px;
+	}
+
+	.container_form input
+	{
+		text-align: left;
+		font-size: 38px !important;
+		font-family: Comfortaa-Regular;
+		color: #4F4F4F;
+		line-height: 49px;
+		padding: 10px 12px !important;
+		border-bottom: 1px solid #BDBDBD;
+		box-sizing: border-box;
+		opacity: 0.8;
+		margin-bottom: 4px;
+		outline: none;
+		width: 100%;
+	}
+
+	button.registerbtn
+	{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Roboto, sans-serif;
+		border-radius: 3px;
+		padding: 15px 25px;
+		text-transform: uppercase;
+		font-weight: 600;
+		background-color: #067da0;
+		color: #fff;
+		border-color: unset;
+		border-width: thin;
+		width: 100%;
+		font-size: 50px;
 	}
 
 	.check svg
@@ -1479,6 +1603,8 @@ ul.navigation.open li
 		transform: translate3d(0, 0, 0);
 		transition: all 0.2s ease;
 		font-size: 32px;
+		width: 50px !important;
+		height: 50px !important;
 	}
 
 	.footer-flex__widgetarea
@@ -1488,6 +1614,15 @@ ul.navigation.open li
 		justify-content: flex-start;
 
 
+	}
+
+	.footer-flex p
+	{
+		font-size: 21px;
+		line-height: 1.9em;
+		font-weight: 400;
+		letter-spacing: 0.59px;
+		font-family: Comfortaa, sans-serif;
 	}
 
 	.head_image
@@ -1530,6 +1665,7 @@ ul.navigation.open li
 	#cssmenu > ul > li > a
 	{
 		text-transform: uppercase;
+		font-size: .8em;
 		color: #869aa1;
 		font-weight: 700;
 		text-align: left;
@@ -1778,47 +1914,3 @@ textarea:-ms-input-placeholder
 	margin-right: 10px;
 	text-transform: uppercase;
 }
-@media screen and (max-width: 1200px) {
-	.container_form {
-		width: auto;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.head_info h2 {
-		font-size: 32px;
-	}
-}
-@media screen and (max-width: 992px) {
-	.footer-flex__widgetarea {
-		display: block;
-	}
-	.btn-phone {
-		display: inline-flex;
-		margin-bottom: 40px;
-	}
-	.wrap {
-		display: block;
-		padding: 40px 0;
-	}
-}
-
-@media screen and (max-width: 576px) {
-	.head_info h2 {
-		font-size: 24px;
-	}
-	.landing_page_container .question-title {
-		font-size: 24px;
-	}
-	.container_form {
-		padding: 30px;
-	}
-	.footer-flex {
-		padding: 40px 15px;
-	}
-	.footer-flex p {
-		font-size: 16px;
-	}
-}
-
-
