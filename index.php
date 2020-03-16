@@ -238,9 +238,9 @@
                             </label>
 
                             <p class="a">
-                                <b>Confermo di aver preso visione e di accettare l’informativa sul trattamento dei dati (<a
+                                <b>Cliccando su invia dichiari di aver preso visione e di accetare la nostra <a
                                             href="https://www.altuofianco.it/privacy/"
-                                            target="_blank">privacy policy</a>)</b></p>
+                                            target="_blank">privacy policy</a></b></p>
                         </div>
 
                         <div class="btn">
@@ -273,7 +273,7 @@
                             viale Marcello Finzi, 587<br>
                             41122 Modena (MO)<br>
                             <a href="mailto:servizioclienti@altuofianco.it">servizioclienti@altuofianco.it </a>
-                            <h5>Lavora con noi</h5>
+                        <h5>Lavora con noi</h5>
                         </p>
                     </div>
                 </div>
@@ -295,13 +295,19 @@
             <div class="footer-flex__widget footer-flex__widget--3">
                 <div id="custom_html-4" class="widget_text widget widget_custom_html">
                     <div class="textwidget custom-html-widget">
+                        <div class="footer-logo">
+                            <img src="images/autofianco-colored.svg" alt="">
+                        </div>
                         <div class="footer-social">
-                            <a target="_blank" href="https://www.linkedin.com/company/altuofiancosrl/">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a target="_blank" href="https://www.youtube.com/channel/UCn-NvALNlMl-a8ifBuHNfrA">
-                                <i class="fab fa-youtube"></i>
-                            </a>
+                            <h4 class="footer-social__title">Seguici sui <br> nostri canali</h4>
+                            <div class="footer-social__buttons">
+                                <a target="_blank" href="https://www.linkedin.com/company/altuofiancosrl/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCn-NvALNlMl-a8ifBuHNfrA">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -309,15 +315,15 @@
 
         </div>
     </div>
-    <div data-cookieonly="" class="closure site-closure" id="colophon" role="contentinfo">
-        <div class="closure__inner wbcontainer">
-            <div class="closure__text"><p> 2019 © Copyright - altuofianco srl | P.IVA 03531950362</p></div>
-            <ul id="menu-bottom-menu" class="closure__nav"></ul>
-        </div>
-    </div><!-- .closure -->                            </div>
+    <!--<div data-cookieonly="" class="closure site-closure" id="colophon" role="contentinfo">-->
+    <!--    <div class="closure__inner wbcontainer">-->
+    <!--        <div class="closure__text"><p> 2019 © Copyright - altuofianco srl | P.IVA 03531950362</p></div>-->
+    <!--        <ul id="menu-bottom-menu" class="closure__nav"></ul>-->
+    <!--    </div>-->
+    <!--</div>                            </div>-->
 
-<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 
