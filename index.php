@@ -1,11 +1,5 @@
 <?php
-$webinar = array(
-	'Sicurezza dei dati',
-	'Gestione del tempo e Outsourcing',
-	'Strumenti, regole e soluzioni per lo SmartWorking',
-	'Efficientamento energetico nelle imprese',
-	'Telefonia per il business'
-);
+	$webinar = array('Sicurezza dei dati', 'Gestione del tempo e Outsourcing', 'Strumenti, regole e soluzioni per lo SmartWorking', 'Efficientamento energetico nelle imprese', 'Telefonia per il business');
 
 
 ?>
@@ -180,48 +174,21 @@ $webinar = array(
 <!--    </div>-->
 <!--</div>-->
 <div class="landing_page_container">
-
     <div class="container-header">
-        <div class="head_image">
-
-        </div>
         <div class="head_info">
             <h1>Webinar Altuofianco</h1>
-
-            <h2>asfdlkșlk jsadg lkg lkg hdslkghsdlkjf.</h2>
+            <h2>#iorestoacasa e mi formo</h2>
         </div>
     </div>
     <div class="wrap">
         <div class="content_text">
-            <h3 class="question-title">Di cosa si parlerà?</h3>
-            <ul>
-                <li>
-                    <p style="text-align:justify"><b class="title-blue">Strategie sgsdgdsg sd per sgdsdgsd i s gsd</b>
-                        <br/> gsd sdg sd le sgsdsd g di<b> sdgsdgs sdgsdg </b>dsfdsgsgsdg sdgsd sd sdg sdg
-                    </p>
-                </li>
-                <li>
-                    <p style="text-align:justify"><b class="title-blue"> ds gsd gsdgsdgsd </b><br/>
-                        <b> sgdsdgsdg</b> e sdgsdgsd dell’<b>energia elettrica</b> nella tua attività: dalle colonnine di ricarica per auto elettriche, agli
-                        <b>impianti fotovoltaici</b> di piccole e grandi dimensioni.
-                    </p>
-                </li>
-
-                <li>
-                    <p style="text-align:justify"><b
-                                class="title-blue"> sdgsdg di sgdsdg per i tuoi clienti</b><br/> - Qual è sdgsdg Wi-fi più utile e funzionale per la tua s gsdgs? Impara di più sulla
-                        <b> connettività intelligente,</b> la nuova frontiera di connessione, piena di contenuti e servizi per mantenere il contatto con il cliente durante e dopo il soggiorno.<br/> - sd gsdg s quali sono le
-                        <b>soluzioni dati</b> da offrire ai tuoi clienti per soggiornare al meglio, senza perdere mai la possibilità di rimanere connessi.
-
-                    </p>
-                </li>
-            </ul>
-            <h2>Al sdgsdgsd è previsto un s dgsd gsd gratuito con sgd sdg sd</h2>
-
+            <h3 class="question-title">Webinar gratuiti organizzati <br> da Altuofianco</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </div>
         <div class="content_form">
             <div class="contattaci_form">
-
                 <form action="" method="POST">
                     <div class="container_form">
                         <h2 class="question-title">ISCRIVITI AL WEBINAR </h2>
@@ -230,9 +197,9 @@ $webinar = array(
                                 <option value="">Scegli il webinar*</option>
 								<?php
 
-								foreach ($webinar as $key => $value):
-									echo '<option value="' . $key . '">' . $value . '</option>'; //close your tags!!
-								endforeach;
+									foreach ($webinar as $key => $value):
+										echo '<option value="' . $key . '">' . $value . '</option>'; //close your tags!!
+									endforeach;
 								?>
                             </select>
                         </div>
@@ -301,26 +268,28 @@ $webinar = array(
 
             <div class="footer-flex__widget footer-flex__widget--1">
                 <div id="custom_html-2" class="widget_text widget widget_custom_html">
-                    <div class="textwidget custom-html-widget"><p>altuofianco srl<br>
+                    <div class="textwidget custom-html-widget">
+                        <p>altuofianco srl<br>
                             viale Marcello Finzi, 587<br>
                             41122 Modena (MO)<br>
-                            <a href="mailto:servizioclienti@altuofianco.it">servizioclienti@altuofianco.it
-                            </a>
-                        </p></div>
+                            <a href="mailto:servizioclienti@altuofianco.it">servizioclienti@altuofianco.it </a>
+                            <h5>Lavora con noi</h5>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="footer-flex__widget footer-flex__widget--2">
-                <div id="media_image-3" class="widget widget_media_image"><a href="tel:800904111">
-                        <img width="222" height="82"
-                             src="https://www.altuofianco.it/wp-content/uploads/2019/01/altuofianco-numero-verde.png"
-                             class="image wp-image-68  attachment-full size-full" alt=""
-                             style="max-width: 100%; height: auto;">
-                    </a></div>
                 <div id="custom_html-3" class="widget_text widget widget_custom_html">
                     <div class="textwidget custom-html-widget"><p>
                             Feriali 9:30 - 12:30 | 14:30 alle 17:30. <br>
                             Foreign Call + 39 328 7533322
                         </p></div>
+                </div>
+                <div id="media_image-3" class="widget widget_media_image">
+                    <a href="" class="btn-phone">
+                        <img src="images/phone-resized.svg" alt="">
+                        <span>Contatti</span>
+                    </a>
                 </div>
             </div>
             <div class="footer-flex__widget footer-flex__widget--3">
