@@ -77,8 +77,12 @@ body.fixed {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0 auto;
-	max-width: 1120px;
+	max-width: 1920px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
 	font-family: sans-serif;
 	background: #fff;
 }
@@ -89,6 +93,7 @@ body.fixed {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-left: auto;
 }
 @media screen and (max-width: 1000px) {
 	#cssmenu > ul.navigation {
@@ -488,6 +493,7 @@ header
 	width: 15%
 }
 
+
 .header__logo img
 {
 	max-width: 264px;
@@ -548,7 +554,7 @@ nav
 
 .container_form
 {
-	margin: 0 auto;
+	margin: 0 0 0 auto;
 	padding: 70px 50px 50px;
 	width: 500px;
 	border: 1px solid #0779A3;
@@ -1127,17 +1133,6 @@ ul.navigation.open li
 
 @media screen  and (min-width: 669px) and (max-width: 1000px)
 {
-
-	.logo
-	{
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%;
-		/* text-align: center; */
-		padding: 10px 0 0 0;
-		/* float: left; */
-	}
 
 	.logo2
 	{
@@ -1763,6 +1758,9 @@ textarea:-ms-input-placeholder
 		display: block;
 		padding: 40px 0;
 		width: auto;
+	}
+	.head_info {
+		margin-left: 15px;
 	}
 	.header__logo img {
 		max-width: 160px;

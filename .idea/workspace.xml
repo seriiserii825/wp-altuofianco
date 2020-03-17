@@ -4,7 +4,6 @@
     <list default="true" id="ed8fda74-ec9d-49a8-9941-6765f4148910" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,7 @@
       <workItem from="1584345753739" duration="63000" />
       <workItem from="1584345817322" duration="729000" />
       <workItem from="1584346566170" duration="6875000" />
+      <workItem from="1584445685095" duration="1454000" />
     </task>
     <servers />
   </component>
@@ -83,10 +83,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="619" y="284" width="426" height="485" key="FileChooserDialogImpl" timestamp="1584346082383">
+    <state x="619" y="284" width="426" height="485" key="FileChooserDialogImpl" timestamp="1584356240174">
       <screen x="0" y="25" width="1600" height="875" />
     </state>
-    <state x="619" y="284" width="426" height="485" key="FileChooserDialogImpl/0.25.1600.875@0.25.1600.875" timestamp="1584346082383" />
+    <state x="619" y="284" width="426" height="485" key="FileChooserDialogImpl/0.25.1600.875@0.25.1600.875" timestamp="1584356240174" />
     <state x="743" y="373" width="426" height="485" key="FileChooserDialogImpl/0.25.1920.1175@0.25.1920.1175" timestamp="1582031196612" />
     <state x="187" y="130" width="1538" height="971" key="MergeDialog" timestamp="1581935875087">
       <screen x="0" y="25" width="1920" height="1175" />
