@@ -1,5 +1,36 @@
 <?php
-	$webinar = array('Sicurezza dei dati', 'Gestione del tempo e Outsourcing', 'Strumenti, regole e soluzioni per lo SmartWorking', 'Efficientamento energetico nelle imprese', 'Telefonia per il business');
+	$webinar = array('Sicurezza dei dati', 
+	'Gestione del tempo e Outsourcing', 
+	'Smartworking: soluzioni e strumenti',
+	'Efficientamento energetico nelle imprese', 
+	'Telefonia per il business');
+	$hide = array ();
+foreach ($webinar as $key => $value) {
+	
+	$n = 0;
+	 $hide[$key] = "";
+	$filez = "/home/u103857406/domains/altuofianco.it/public_html/webinar/logs/Webinar-" . $value . '-' . $n . ".csv";
+		
+		
+	$filez1 = "/home/u103857406/domains/altuofianco.it/public_html/webinar/logs/Webinar-" . $value . "-1.csv";
+
+	
+	if ((file_exists($filez)) && (file_exists($filez1))) {   
+			
+			$no_of_lines = count(file($filez)) - 1;
+			$no_of_lines1 = count(file($filez1)) - 1; 
+				
+			
+			if (($no_of_lines > 10) && ($no_of_lines1 > 10)) {
+			$hide[$key] = "hidden";
+			echo "There are $no_of_lines records in $filez"."\n";
+			}
+			
+		}
+ 
+}
+
+
 
 
 ?>
@@ -11,7 +42,22 @@
     <title>Altuofianco - Webinar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Menu</title>
+	
+	<meta name="description" content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti"/>
+	<link rel="canonical" href="https://altuofianco.it/webinar/" />
+	<meta property="og:locale" content="it_IT" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Altuofianco | #iorestoacasa e mi formo" />
+	<meta property="og:description" content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti" />
+	<meta property="og:url" content="https://altuofianco.it/webinar/" />
+	<meta property="og:site_name" content="Altuofianco" />
+	<meta property="og:image" content="https://altuofianco.it/webinar/images/atf-webinar.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti" />
+	<meta name="twitter:title" content="Altuofianco | #iorestoacasa e mi formo" />	
+		
+		
+  
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
 
     <!--    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
@@ -160,20 +206,7 @@
         </ul>
     </nav>
 </header>
-<!--<div class="head_soluzione">-->
-<!--    <div class="title-page">-->
-<!--     <span>-->
-<!--              <p id="breadcrumbs">-->
-<!--                  <span>-->
-<!--                      <span>-->
-<!--                          <a href="https://www.altuofianco.it/">Altuofianco webinar</a>-->
-<!--                      </span>-->
-<!--                  </span>-->
-<!--              </p>-->
-<!--         </span>-->
-<!--        <h1>#iorestoacasa e mi formo</h1>-->
-<!--    </div>-->
-<!--</div>-->
+
 <div class="landing_page_container">
     <div class="container-header">
         <div class="head_info">
@@ -190,16 +223,17 @@
         </div>
         <div class="content_form">
             <div class="contattaci_form">
-                <form action="" method="POST">
+                <form action="" id="apply" method="POST">
                     <div class="container_form">
-                        <h2 class="question-title">ISCRIVITI AL WEBINAR </h2>
+                        <h2 class="question-title">Iscriviti </h2>
                         <div class="form-group">
                             <select id="webinar" name="webinar" required>
                                 <option value="">Scegli il webinar*</option>
 								<?php
 
 									foreach ($webinar as $key => $value):
-										echo '<option value="' . $key . '">' . $value . '</option>'; //close your tags!!
+									
+										echo '<option value="' . $key . '" ' . $hide[$key] . '>' . $value . '</option>'; //close your tags!!
 									endforeach;
 								?>
                             </select>
@@ -223,10 +257,10 @@
                             <input type="text" name="azienda" placeholder="Azienda*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="provincia" placeholder="Provincia">
+                            <input type="text" name="provincia" placeholder="Provincia" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="messagio" placeholder="Messaggio"></textarea>
+                            <textarea name="messaggio" form="apply" placeholder="Messaggio"></textarea>
                         </div>
                         <div class="obligations">* campo obbligatorio</div>
                         <div class="checkbox">

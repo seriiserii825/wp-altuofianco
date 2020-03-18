@@ -281,7 +281,7 @@ ul.navigation.open
 
 .landing_page_container
 {
-	font-family: Graphik;
+	font-family: Comfortaa-Regular;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -315,7 +315,7 @@ ul.navigation.open
 
 .head_info h1
 {
-	font-family: Graphik;
+	font-family: Comfortaa-Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
@@ -326,7 +326,7 @@ ul.navigation.open
 
 .head_info h2
 {
-	font-family: Graphik;
+	font-family: Comfortaa-Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 64px;
@@ -1463,8 +1463,21 @@ ul.navigation.open li
 		display: flex;
 		justify-content: space-between;
 	}
+.head_info h2 {
+    font-size: 40px;
+}
+#cssmenu > ul > li > a{
 
+    font-size: 13px;
+    width: max-content;
+}
 
+#cssmenu > ul.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
 	ul.navigation
 	{
 		width: 80%;
@@ -1498,14 +1511,15 @@ ul.navigation.open li
 
 .landing_page_container .question-title
 {
+	font-family: Comfortaa-Bold;
 	margin-bottom: 28px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 30px;
 	line-height: 125%;
 	letter-spacing: -1px;
 	text-align: left;
-	color: #000000;
+	color: #057da0;
 }
 
 select
