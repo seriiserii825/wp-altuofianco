@@ -95,7 +95,7 @@
 
 <body>
 
-<header>
+<header class="main-header">
     <nav id='cssmenu'>
         <div class="logo">
             <div class="header__logo">
