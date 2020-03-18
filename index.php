@@ -1,36 +1,30 @@
 <?php
-	$webinar = array('Sicurezza dei dati', 
-	'Gestione del tempo e Outsourcing', 
-	'Smartworking: soluzioni e strumenti',
-	'Efficientamento energetico nelle imprese', 
-	'Telefonia per il business');
-	$hide = array ();
-foreach ($webinar as $key => $value) {
-	
-	$n = 0;
-	 $hide[$key] = "";
-	$filez = "/home/u103857406/domains/altuofianco.it/public_html/webinar/logs/Webinar-" . $value . '-' . $n . ".csv";
-		
-		
-	$filez1 = "/home/u103857406/domains/altuofianco.it/public_html/webinar/logs/Webinar-" . $value . "-1.csv";
+	$webinar = array('Sicurezza dei dati', 'Gestione del tempo e Outsourcing', 'Smartworking: soluzioni e strumenti', 'Efficientamento energetico nelle imprese', 'Telefonia per il business');
+	$hide = array();
+	foreach ($webinar as $key => $value) {
 
-	
-	if ((file_exists($filez)) && (file_exists($filez1))) {   
-			
+		$n = 0;
+		$hide[$key] = "";
+		$filez = "/home/u103857406/domains/altuofianco.it/public_html/webinar/logs/Webinar-" . $value . '-' . $n . ".csv";
+
+
+		$filez1 = "/home/u103857406/domains/altuofianco.it/public_html/webinar/logs/Webinar-" . $value . "-1.csv";
+
+
+		if ((file_exists($filez)) && (file_exists($filez1))) {
+
 			$no_of_lines = count(file($filez)) - 1;
-			$no_of_lines1 = count(file($filez1)) - 1; 
-				
-			
+			$no_of_lines1 = count(file($filez1)) - 1;
+
+
 			if (($no_of_lines > 10) && ($no_of_lines1 > 10)) {
-			$hide[$key] = "hidden";
-			echo "There are $no_of_lines records in $filez"."\n";
+				$hide[$key] = "hidden";
+				echo "There are $no_of_lines records in $filez" . "\n";
 			}
-			
+
 		}
- 
-}
 
-
+	}
 
 
 ?>
@@ -42,22 +36,24 @@ foreach ($webinar as $key => $value) {
     <title>Altuofianco - Webinar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	
-	<meta name="description" content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti"/>
-	<link rel="canonical" href="https://altuofianco.it/webinar/" />
-	<meta property="og:locale" content="it_IT" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Altuofianco | #iorestoacasa e mi formo" />
-	<meta property="og:description" content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti" />
-	<meta property="og:url" content="https://altuofianco.it/webinar/" />
-	<meta property="og:site_name" content="Altuofianco" />
-	<meta property="og:image" content="https://altuofianco.it/webinar/images/atf-webinar.jpg" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:description" content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti" />
-	<meta name="twitter:title" content="Altuofianco | #iorestoacasa e mi formo" />	
-		
-		
-  
+
+    <meta name="description"
+          content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti"/>
+    <link rel="canonical" href="https://altuofianco.it/webinar/"/>
+    <meta property="og:locale" content="it_IT"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Altuofianco | #iorestoacasa e mi formo"/>
+    <meta property="og:description"
+          content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti"/>
+    <meta property="og:url" content="https://altuofianco.it/webinar/"/>
+    <meta property="og:site_name" content="Altuofianco"/>
+    <meta property="og:image" content="https://altuofianco.it/webinar/images/atf-webinar.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description"
+          content="Altuofianco, nell'ambito delle iniziative #iorestoacasa organizza webinar formativi gratuiti"/>
+    <meta name="twitter:title" content="Altuofianco | #iorestoacasa e mi formo"/>
+
+
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
 
     <!--    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
@@ -66,8 +62,7 @@ foreach ($webinar as $key => $value) {
     <!--<link rel="stylesheet" href="libs/form-styler/jquery.formstyler.css">-->
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .post-thumbnail img[src$='.svg']
-        {
+        .post-thumbnail img[src$='.svg'] {
             width: 100%;
             height: auto;
         }
@@ -114,11 +109,27 @@ foreach ($webinar as $key => $value) {
         <div class="button" id="js-button"></div>
 
         <ul class="navigation" id="js-navigation">
-            <li><a href='https://www.altuofianco.it/'>Home</a></li>
-            <li><a href='https://www.altuofianco.it/chi-siamo'>Chi siamo</a></li>
-            <li class="has-children"><a href="https://www.altuofianco.it/soluzioni/">Soluzioni</a>
+            <li>
+                <a href='https://www.altuofianco.it/'>Home</a>
+            </li>
+            <li>
+                <a href='https://www.altuofianco.it/chi-siamo'>Chi siamo</a>
+            </li>
+            <li class="has-children">
+                <a href="https://www.altuofianco.it/soluzioni/">Soluzioni</a>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+                    <g id="surface1">
+                        <path style="fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 268.666635 255.971841 L 404.825695 127.44661 C 418.905649 113.415274 426.641663 94.620253 426.708312 74.620055 C 426.616919 33.509045 393.209072 0.0276752 351.986705 0.00820431 C 332.097865 0.0524187 313.448288 7.760564 299.368335 21.791899 L 107.215631 203.219517 C 96.794184 213.576043 89.823101 226.591573 86.85522 241.042651 C 85.866337 246.044861 85.321899 251.046084 85.333014 256.046072 C 85.343882 260.934949 85.799688 266.045059 86.810801 271.042824 C 89.731547 285.369699 96.760676 298.465217 107.450782 308.997033 L 299.187254 490.126792 C 313.3297 504.206499 332.013858 512.053871 352.013809 512.009409 C 393.125066 512.029127 426.7173 478.509922 426.62566 437.287802 C 426.692556 417.398715 418.873053 398.638274 404.619002 384.336593 Z M 268.666635 255.971841 " transform="matrix(0.0000781549,-0.0351562,0.0351562,0.0000781549,-0.0199854,17.97997)"/>
+                    </g>
+                </svg>
                 <ul class="sub-menu">
-                    <li class="has-children"><a href='https://www.altuofianco.it/soluzioni/strategia/'>Strategia</a>
+                    <li class="has-children">
+                        <a href='https://www.altuofianco.it/soluzioni/strategia/'>Strategia</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+                            <g id="surface1">
+                                <path style="fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 268.666635 255.971841 L 404.825695 127.44661 C 418.905649 113.415274 426.641663 94.620253 426.708312 74.620055 C 426.616919 33.509045 393.209072 0.0276752 351.986705 0.00820431 C 332.097865 0.0524187 313.448288 7.760564 299.368335 21.791899 L 107.215631 203.219517 C 96.794184 213.576043 89.823101 226.591573 86.85522 241.042651 C 85.866337 246.044861 85.321899 251.046084 85.333014 256.046072 C 85.343882 260.934949 85.799688 266.045059 86.810801 271.042824 C 89.731547 285.369699 96.760676 298.465217 107.450782 308.997033 L 299.187254 490.126792 C 313.3297 504.206499 332.013858 512.053871 352.013809 512.009409 C 393.125066 512.029127 426.7173 478.509922 426.62566 437.287802 C 426.692556 417.398715 418.873053 398.638274 404.619002 384.336593 Z M 268.666635 255.971841 " transform="matrix(0.0000781549,-0.0351562,0.0351562,0.0000781549,-0.0199854,17.97997)"/>
+                            </g>
+                        </svg>
                         <ul class="sub-menu-inner">
                             <li>
                                 <a href='https://www.altuofianco.it/soluzioni/strategia/comunicazione/telecomunicazioni-avanzate'>TELECOMUNICAZIONI AVANZATE</a>
@@ -146,9 +157,17 @@ foreach ($webinar as $key => $value) {
                             </li>
                         </ul>
                     </li>
-                    <li class="has-children"><a href='https://www.altuofianco.it/soluzioni/sicurezza/'>Sicurezza</a>
+                    <li class="has-children">
+                        <a href='https://www.altuofianco.it/soluzioni/sicurezza/'>Sicurezza</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+                            <g id="surface1">
+                                <path style="fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 268.666635 255.971841 L 404.825695 127.44661 C 418.905649 113.415274 426.641663 94.620253 426.708312 74.620055 C 426.616919 33.509045 393.209072 0.0276752 351.986705 0.00820431 C 332.097865 0.0524187 313.448288 7.760564 299.368335 21.791899 L 107.215631 203.219517 C 96.794184 213.576043 89.823101 226.591573 86.85522 241.042651 C 85.866337 246.044861 85.321899 251.046084 85.333014 256.046072 C 85.343882 260.934949 85.799688 266.045059 86.810801 271.042824 C 89.731547 285.369699 96.760676 298.465217 107.450782 308.997033 L 299.187254 490.126792 C 313.3297 504.206499 332.013858 512.053871 352.013809 512.009409 C 393.125066 512.029127 426.7173 478.509922 426.62566 437.287802 C 426.692556 417.398715 418.873053 398.638274 404.619002 384.336593 Z M 268.666635 255.971841 " transform="matrix(0.0000781549,-0.0351562,0.0351562,0.0000781549,-0.0199854,17.97997)"/>
+                            </g>
+                        </svg>
                         <ul class="sub-menu-inner">
-                            <li><a href='https://www.altuofianco.it/soluzioni/sicurezza/legale/gdpr'>GDPR</a></li>
+                            <li>
+                                <a href='https://www.altuofianco.it/soluzioni/sicurezza/legale/gdpr'>GDPR</a>
+                            </li>
                             <li>
                                 <a href='https://www.altuofianco.it/soluzioni/sicurezza/aziendale/avvocato-altuofianco'>Avvocato Altuofianco</a>
                             </li>
@@ -169,7 +188,13 @@ foreach ($webinar as $key => $value) {
                             </li>
                         </ul>
                     </li>
-                    <li class="has-children"><a href='https://www.altuofianco.it/soluzioni/energie/'>Energie</a>
+                    <li class="has-children">
+                        <a href='https://www.altuofianco.it/soluzioni/energie/'>Energie</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="18pt" viewBox="0 0 18 18" version="1.1">
+                            <g id="surface1">
+                                <path style="fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 268.666635 255.971841 L 404.825695 127.44661 C 418.905649 113.415274 426.641663 94.620253 426.708312 74.620055 C 426.616919 33.509045 393.209072 0.0276752 351.986705 0.00820431 C 332.097865 0.0524187 313.448288 7.760564 299.368335 21.791899 L 107.215631 203.219517 C 96.794184 213.576043 89.823101 226.591573 86.85522 241.042651 C 85.866337 246.044861 85.321899 251.046084 85.333014 256.046072 C 85.343882 260.934949 85.799688 266.045059 86.810801 271.042824 C 89.731547 285.369699 96.760676 298.465217 107.450782 308.997033 L 299.187254 490.126792 C 313.3297 504.206499 332.013858 512.053871 352.013809 512.009409 C 393.125066 512.029127 426.7173 478.509922 426.62566 437.287802 C 426.692556 417.398715 418.873053 398.638274 404.619002 384.336593 Z M 268.666635 255.971841 " transform="matrix(0.0000781549,-0.0351562,0.0351562,0.0000781549,-0.0199854,17.97997)"/>
+                            </g>
+                        </svg>
                         <ul class="sub-menu-inner">
                             <li>
                                 <a href="https://www.altuofianco.it/soluzioni/energie/azienda/easyhr-app-risorse-umane">App per la gestione del personale</a>
@@ -190,9 +215,15 @@ foreach ($webinar as $key => $value) {
                     </li>
                 </ul>
             </li>
-            <li><a href='https://www.altuofianco.it/lavora-con-noi'>Lavora con noi</a></li>
-            <li><a href='https://www.altuofianco.it/news/'>News</a></li>
-            <li><a href='https://www.altuofianco.it/contatti'>Contatti</a></li>
+            <li>
+                <a href='https://www.altuofianco.it/lavora-con-noi'>Lavora con noi</a>
+            </li>
+            <li>
+                <a href='https://www.altuofianco.it/news/'>News</a>
+            </li>
+            <li>
+                <a href='https://www.altuofianco.it/contatti'>Contatti</a>
+            </li>
             <!--<li><a target="_blank" href="http://wind.monitorcrm.it/crm/autenticazione/modulo-accesso/">-->
             <!--        <i class="fas fa-briefcase"></i>-->
             <!--    </a></li>-->
@@ -232,7 +263,7 @@ foreach ($webinar as $key => $value) {
 								<?php
 
 									foreach ($webinar as $key => $value):
-									
+
 										echo '<option value="' . $key . '" ' . $hide[$key] . '>' . $value . '</option>'; //close your tags!!
 									endforeach;
 								?>
@@ -273,9 +304,12 @@ foreach ($webinar as $key => $value) {
                             </label>
 
                             <p class="a">
-                                <b>Cliccando su invia dichiari di aver preso visione e di accetare la nostra <a
+                                <b>Cliccando su invia dichiari di aver preso visione e di accetare la nostra
+                                    <a
                                             href="https://www.altuofianco.it/privacy/"
-                                            target="_blank">privacy policy</a></b></p>
+                                            target="_blank">privacy policy
+                                    </a>
+                                </b></p>
                         </div>
 
                         <div class="btn">
@@ -307,7 +341,7 @@ foreach ($webinar as $key => $value) {
                         <p>altuofianco srl<br>
                             viale Marcello Finzi, 587<br>
                             41122 Modena (MO)<br>
-                            <a href="mailto:servizioclienti@altuofianco.it">servizioclienti@altuofianco.it </a>
+                            <a href="mailto:servizioclienti@altuofianco.it">servizioclienti@altuofianco.it</a>
                         <h5>Lavora con noi</h5>
                         </p>
                     </div>
